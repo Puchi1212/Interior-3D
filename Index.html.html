@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AR.js with Marker</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+  <!-- A-Frame Scene for AR.js -->
+  <a-scene embedded arjs>
+    <!-- Marker-based AR -->
+    <a-marker type="pattern" url="https://drive.google.com/file/d/1vX94SQNPEAEzlcrcbmtTUZrLNscxItvR/view?usp=sharing">
+      <a-entity 
+        gltf-model="https://drive.google.com/file/d/1OFL7RnrZ4PjpgkmRFwMAA2X6ySfKPY6G/view?usp=drive_link"
+        scale="2 2 2"
+        position="0 0 0">
+      </a-entity>
+    </a-marker>
+    <!-- Camera for AR -->
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
